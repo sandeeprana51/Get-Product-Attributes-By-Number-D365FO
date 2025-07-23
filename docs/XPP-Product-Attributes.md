@@ -1,3 +1,12 @@
+# X++: Fill Temp Table With Product Attributes via SQL Stored Procedure (D365 F&O)
+
+This sample demonstrates how to fetch product attributes for a given product number using a SQL Server stored procedure, then map those results into an X++ temp table for further processing or reporting.
+
+---
+
+## 🖥️ X++ Code Sample
+
+```xpp
 // 1. Clear the temp table buffer before filling new data.
 tempTable.clear();
 
@@ -38,7 +47,7 @@ while (resultSet.next())
         // case 'Arround gap':
         //     tempTable.Arround_Gap = attributeValue;
         //     break;
-        // ...
+        // Add cases as needed for your attribute fields
     }
 }
 
